@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--background-darker);
+    align-items: center;
+    border-bottom: 1px solid var(--text-accent);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--text);
+    transition: 0;
+    margin-right: auto;
+}
+
+.cursor {
+    margin-left: 0.5rem;
+    animation: blink-cursor .75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to { opacity: 0; }
+    50% { opacity: 100; }
+}
+
+.name>span {
+    color: var(--text-accent);
+    margin-right: 0.5rem
+}
+
+.name:hover {
+    color: var(--text);
+    background: none;
+}
+
+.navlink {
+    font-size: 1.15rem;
+}
+
+@media screen and (max-width: 750px) {
+    .name {
+        font-size: 1rem;
+    }
+
+    .navlink {
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+
+    .navbar {
+        gap: 0.1rem;
+        padding: 0.5rem
+    }
+}
+
