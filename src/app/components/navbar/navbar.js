@@ -17,7 +17,7 @@ export default function NavBar() {
       <Link className={styles.navlink} href='#schedule'>Schedule</Link>
       <Link className={styles.navlink} href="#faq">FAQ</Link>
       <Link className={styles.navlink} href="#team">Team</Link>
-      <Link className={styles.navlink} href="DISCORD_URL_HERE">Discord</Link>
+      <Link className={styles.navlink} rel="noreferrer noopener" target='_blank' href="https://discord.gg/H2EteNDhEP">Discord</Link>
     </nav>
   )
 }
