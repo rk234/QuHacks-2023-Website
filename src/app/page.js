@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link';
 import AboutSection from './components/about/about';
+import ScheduleSection from './components/schedule/schedule';
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       </div>
       <div className={styles.content} id="about">
         <AboutSection></AboutSection>
+      </div>
+      <div className={styles.content} id="schedule">
+        <ScheduleSection></ScheduleSection>
       </div>
     </main>
   )
