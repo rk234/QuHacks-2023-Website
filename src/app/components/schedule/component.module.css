@@ -46,3 +46,30 @@
     padding: .5vw;
     font-size: 3.5vh;
 }
+
+@media screen and (max-width: 750px) {
+    .sectionContainer {
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem;
+        width: 100%;
+        background-color: #002700;
+        border-left: 0.3rem solid var(--text-accent);
+    }
+    .th {
+        color: #00c200;;
+        border-bottom: 2px solid #FFF0EA;
+        padding: 1vh 2vw;
+        text-align: left;
+        padding: .5vw;
+        font-size: 2.5vh;
+    }
+
+    .td{
+        border: none;
+        text-align: left;
+        padding: .5vw;
+        font-size: 2.5vh;
+    }
+}
