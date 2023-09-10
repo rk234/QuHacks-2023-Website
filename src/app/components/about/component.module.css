@@ -1,12 +1,13 @@
 .aboutImg {
-    width: 500px;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 40%;
 }
 
 .aboutImg>img {
-    width: 300px;
+    max-width: 100%;
 }
 
 .title {
@@ -41,7 +42,7 @@
     max-width: 75rem;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .aboutInfoContainer {
         width: 100%;
         margin-top: 4rem;
@@ -52,6 +53,7 @@
         flex-direction: column;
         width: 100%;
         padding: 1rem;
+        gap: 2rem;
     }
 
     .aboutInfoContainer {
@@ -61,6 +63,7 @@
     }
 
     .aboutImg {
-        order: 1;
+        order: 2;
+        max-width: 90%;
     }
 }

@@ -5,6 +5,7 @@
     padding: 3rem;
     width: 100%;
     background-color: #002700;
+    border-left: 0.3rem solid var(--text-accent);
 }
 
 .title {

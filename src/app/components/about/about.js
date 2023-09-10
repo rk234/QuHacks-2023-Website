@@ -16,8 +16,6 @@ export default function AboutSection() {
             <div className={styles.aboutImg}>
                 <img src="/about.jpeg"></img>
             </div>
-            <br></br>
-            <hr class="dashed"></hr>
         </div>
     )
 }
