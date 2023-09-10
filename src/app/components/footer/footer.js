@@ -17,6 +17,7 @@ export default function Footer() {
             <h3 className={styles.sectionheader}>Contributors</h3>
             <p className={styles.contribs}>
             Ramy Kaddouri<br/>
+            Nicole Luo
             </p>
         </div>
     </main>
