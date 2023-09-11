@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import Link from 'next/link';
 import AboutSection from './components/about/about';
 import ScheduleSection from './components/schedule/schedule';
+import TeamSection from './components/team/team';
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
       </div>
       <div className={styles.content} id="schedule">
         <ScheduleSection></ScheduleSection>
+      </div>
+      <div className={styles.content} id="schedule">
+        <TeamSection></TeamSection>
       </div>
     </main>
   )
