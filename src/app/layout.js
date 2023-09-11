@@ -11,6 +11,9 @@ export const metadata = {
   description: "MD's largest annual student run hackathon!",
   icons: {
     icon: 'logo.png'
+  },
+  openGraph: {
+    images: 'preview-card.png'
   }
 }
 
