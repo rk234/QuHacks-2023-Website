@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AboutSection from './components/about/about';
 import ScheduleSection from './components/schedule/schedule';
 import TeamSection from './components/team/team';
+import Faq from './components/faq/faq';
 
 export default function Home() {
   return (
@@ -28,7 +29,10 @@ export default function Home() {
       <div className={styles.content} id="schedule">
         <ScheduleSection></ScheduleSection>
       </div>
-      <div className={styles.content} id="schedule">
+      <div className={styles.content} id="faq">
+        <Faq></Faq>
+      </div>
+      <div className={styles.content} id="team">
         <TeamSection></TeamSection>
       </div>
     </main>
