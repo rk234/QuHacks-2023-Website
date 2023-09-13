@@ -12,21 +12,21 @@ export default function TeamSection() {
         ["Caleb Shim", "Treasurer", "/headshots/caleb_headshot.jpg"],
 
         ["Jamie Lee", "Graphic Designer", "/headshots/jamie_headshot.jpg"],
+        ["Joshua Oh", "Graphic Designer", "/headshots/joshua_headshot.jpg"],
 
         ["Ramy Kaddouri", "Website Team Lead", "/headshots/ramy_headshot.jpeg"],
         ["Joel Chemmanur", "Website Dev", "/headshots/joel_headshot.jpg"],
-        ["Sai Chandra", "Website Dev", "/headshots/sai_siddhish_headshot.png"],
         ["Nicole Luo", "Website Dev", "/headshots/nicole_headshot.png"],
+        ["Sai Chandra", "Website Dev", "/headshots/sai_siddhish_headshot.png"],
 
         ["Gordon Mei", "Outreach Team", "/headshots/gordon_headshot.png"],
+        ["Ishani Ghosh", "Outreach Team", "/headshots/ishani_headshot.png"],
+        ["Luis Valerio", "Outreach Team", "/headshots/luis_headshot.png"],
 
         ["Akhil Shastry", "Sponsor Liason", "/headshots/akhil_headshot.jpg"],
 
         ["Jaden  Li", "Workshop Creator", "/headshots/jaden_headshot.jpg"],
         ["Victor Liu", "Workshop Creator", "/headshots/victor_headshot.jpg"],
-
-        ["Ishani Ghosh", "TBD", "/headshots/ishani_headshot.png"],
-        ["Luis Valerio", "TBD", "/headshots/luis_headshot.png"],
     ]
 
     teamCards = teamCards.map((card) => {
