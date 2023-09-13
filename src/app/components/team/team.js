@@ -7,18 +7,20 @@ export default function TeamSection() {
         ["Aryan Sharma", "Director", "/headshots/aryan_headshot.jpg"],
         ["Seonyoung Lee", "Director", "/headshots/seonyoung_headshot.jpg"],
 
-        ["Neeraj", "Secretary", "/headshots/neeraj_headshot.jpg"],
+        ["Neeraj Pawar", "Secretary", "/headshots/neeraj_headshot.jpg"],
 
         ["Caleb Shim", "Treasurer", "/headshots/caleb_headshot.jpg"],
 
+        ["Jamie Lee", "Graphic Designer", "/headshots/jamie_headshot.jpg"],
+
         ["Ramy Kaddouri", "Website Team Lead", "/headshots/ramy_headshot.jpeg"],
-        ["Joel", "Website Dev", "/headshots/joel_headshot.jpg"],
+        ["Joel Chemmanur", "Website Dev", "/headshots/joel_headshot.jpg"],
         ["Sai Chandra", "Website Dev", "/headshots/sai_siddhish_headshot.png"],
         ["Nicole Luo", "Website Dev", "/headshots/nicole_headshot.png"],
 
-        ["Gordon", "Outreach Team", "/headshots/gordon_headshot.png"],
+        ["Gordon Mei", "Outreach Team", "/headshots/gordon_headshot.png"],
 
-        ["Akhil", "Sponsor Liason", "/headshots/akhil_headshot.jpg"],
+        ["Akhil Shastry", "Sponsor Liason", "/headshots/akhil_headshot.jpg"],
 
         ["Jaden  Li", "Workshop Creator", "/headshots/jaden_headshot.jpg"],
         ["Victor Liu", "Workshop Creator", "/headshots/victor_headshot.jpg"],
