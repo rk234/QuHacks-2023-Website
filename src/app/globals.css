@@ -82,6 +82,7 @@ a:hover {
 button:disabled {
   cursor:not-allowed;
   opacity: 50%;
+  pointer-events: none;
 }
 
 .btn-primary {
@@ -101,6 +102,11 @@ button:disabled {
   color: var(--text);
 }
 
+.btn-primary:disabled {
+  background-color: var(--text-accent);
+  color: var(--text);
+}
+
 .btn-secondary {
   border-radius: 0;
   border: var(--text) 1px solid;
@@ -114,6 +120,11 @@ button:disabled {
 }
 
 .btn-secondary:hover {
+  background-color: var(--text);
+  color: var(--background-darker);
+}
+
+.btn-secondary:disabled {
   background-color: var(--text);
   color: var(--background-darker);
 }

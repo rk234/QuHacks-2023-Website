@@ -18,7 +18,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Who can attend?"} 
-                        answer={`You are eligible to participate in QuHacks 2023 if you currently attend middle or high school. If you have already graduated but would still like to attend the event, please consider volunteering or mentoring for the event! Send us an email at freddy@quhacks.tech for more information on contributing to QuHacks, or if you have any questions about our eligibility`}
+                        answer={`You are eligible to participate in QuHacks 2024 if you currently attend middle or high school. If you have already graduated but would still like to attend the event, please consider volunteering or mentoring for the event! Send us an email at freddy@quhacks.tech for more information on contributing to QuHacks, or if you have any questions about our eligibility`}
                     />
                     <FaqQuestion 
                         question={"How much does QuHacks cost?"} 

@@ -12,7 +12,7 @@ export default function NavBar() {
   };
   return (
     <nav className={styles.navbar}>
-      <Link href='/' className={styles.name}><span>$</span>QuHacks 2023<span className={styles.cursor}>█</span></Link>
+      <Link href='/' className={styles.name}><span>$</span>QuHacks 2024<span className={styles.cursor}>█</span></Link>
       <Link className={styles.navlink} href='#about'>About</Link>
       <Link className={styles.navlink} href='#schedule'>Schedule</Link>
       <Link className={styles.navlink} href="#faq">FAQ</Link>
