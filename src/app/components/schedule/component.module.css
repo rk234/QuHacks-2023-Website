@@ -5,6 +5,7 @@
     width: 100%;
     background-color: #002700;
     border-left: 0.3rem solid var(--text-accent);
+    margin: 0 3rem;
 }
 
 .title {
@@ -38,24 +39,29 @@
     padding: 1vh 2vw;
     text-align: left;
     padding: .5vw;
-    font-size: 3.5vh;
+    font-size: 2.5rem;
 }
 
 .td{
     border: none;
     text-align: left;
     padding: .5vw;
-    font-size: 3.5vh;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 750px) {
     .sectionContainer {
         align-items: center;
         gap: 2rem;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
         background-color: #002700;
         border-left: 0.3rem solid var(--text-accent);
+        margin: 0;
+    }
+
+    .title {
+        font-size: 2rem;
     }
     .th {
         color: #00c200;;
@@ -63,13 +69,13 @@
         padding: 1vh 2vw;
         text-align: left;
         padding: .5vw;
-        font-size: 2.5vh;
+        font-size: 1.5rem;
     }
 
     .td{
         border: none;
         text-align: left;
         padding: .5vw;
-        font-size: 2.5vh;
+        font-size: 1rem;
     }
 }

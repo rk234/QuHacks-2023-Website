@@ -130,3 +130,15 @@ h1 {
 p {
   margin-bottom: 0.5rem;;
 }
+
+hr {
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  margin: calc(var(--global-space) * 4) 0;
+  border: none;
+  background: none;
+  border-bottom: 1px dashed gray;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -11,7 +11,10 @@ export default function Footer() {
         </div>
         <div className={styles.col}>
             <h3 className={styles.sectionheader}>Site Links</h3>
-            <p>TODO</p>
+            <Link className={styles.navlink} href='#about'>About</Link>
+            <Link className={styles.navlink} href='#schedule'>Schedule</Link>
+            <Link className={styles.navlink} href="#faq">FAQ</Link>
+            <Link className={styles.navlink} href="#team">Team</Link>
         </div>
         <div className={styles.lastcol}>
             <h3 className={styles.sectionheader}>Contributors</h3>

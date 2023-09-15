@@ -18,18 +18,16 @@ export default function ScheduleSection() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td className={styles.td}>Time 1</td>
-                        <td className={styles.td}>Activity 1</td>
-                        <td className={styles.td}>Room 1</td>
+                        <td className={styles.td}>TBA...</td>
+                        <td className={styles.td}>TBA...</td>
+                        <td className={styles.td}>TBA...</td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                         <td className={styles.td}>Time 2</td>
                         <td className={styles.td}>Activity 2</td>
                         <td className={styles.td}>Room 2</td>
-                    </tr>
-
+                    </tr> */}
                 </tbody>
-
             </table>
         </div>
 

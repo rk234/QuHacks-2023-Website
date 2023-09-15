@@ -5,6 +5,7 @@ import AboutSection from './components/about/about';
 import ScheduleSection from './components/schedule/schedule';
 import TeamSection from './components/team/team';
 import Faq from './components/faq/faq';
+import Sponsors from './components/sponsors/sponsors';
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
       </div>
       <div className={styles.content} id="faq">
         <Faq></Faq>
+      </div>
+      <div className={styles.content} id="sponsors">
+        <Sponsors></Sponsors>
       </div>
       <div className={styles.content} id="team">
         <TeamSection></TeamSection>

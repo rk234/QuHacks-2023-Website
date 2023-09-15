@@ -44,11 +44,20 @@
 @media screen and (max-width: 750px) {
     .name {
         font-size: 1rem;
+        padding: 0;
     }
 
     .navlink {
         font-size: 0.75rem;
         padding: 0.25rem;
+    }
+
+    .name > span {
+        display: none;
+    }
+
+    .cursor {
+        margin-left: 0.25rem;
     }
 
     .navbar {

@@ -9,9 +9,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'QuHacks 2023',
   description: "MD's largest annual student run hackathon!",
-  icons: {
-    icon: 'logo.png'
-  }
 }
 
 export default function RootLayout({ children }) {
