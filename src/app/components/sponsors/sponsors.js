@@ -5,7 +5,7 @@ export default function Sponsors() {
         <div className={styles.sectionContainer}>
             <h1 className={styles.title}>Sponsors</h1>
             <div className={styles.sponsorCall}>
-                <p>Interested in sponsoring QuHacks this year? <a href="mailto:freddy@quhacks.tech">Contact us!</a></p>
+                <p>Interested in sponsoring QuHacks this year? <a href="mailto:info@quhacks.tech">Contact us!</a></p>
             </div>
             {/* <div className={`${styles.tier} ${styles.platinum}`}>
                 <h1 className={styles.tiername}>Platinum</h1>

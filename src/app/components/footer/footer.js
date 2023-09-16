@@ -6,7 +6,7 @@ export default function Footer() {
     <main className={styles.container}>
         <div className={styles.col}>
             <Link href="/" className={styles.sectionheader}>QuHacks 2024</Link>
-            <a className={styles.navlink} href="mailto:freddy@quhacks.tech">Email</a>
+            <a className={styles.navlink} href="mailto:info@quhacks.tech">Email</a>
             <a className={styles.navlink} rel="noreferrer noopener" target='_blank' href="https://discord.gg/H2EteNDhEP">Join our Discord!</a>
         </div>
         <div className={styles.col}>
