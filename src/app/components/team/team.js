@@ -6,18 +6,16 @@ export default function TeamSection() {
     let teamCards = [
         ["Aryan Sharma", "Director", "/headshots/aryan_headshot.jpg"],
         ["Seonyoung Lee", "Director", "/headshots/seonyoung_headshot.jpg"],
-
-        ["Neeraj Pawar", "Secretary", "/headshots/neeraj_headshot.jpg"],
-
         ["Caleb Shim", "Treasurer", "/headshots/caleb_headshot.jpg"],
+
+        ["Ramy Kaddouri", "Website Team Lead", "/headshots/ramy_headshot.jpeg"],
+        ["Nicole Luo", "Website Dev", "/headshots/nicole_headshot.png"],
+        ["Sai Chandra", "Website Dev", "/headshots/sai_siddhish_headshot.png"],
+        ["Joel Chemmanur", "Website Dev", "/headshots/joel_headshot.jpg"],
 
         ["Jamie Lee", "Graphic Designer", "/headshots/jamie_headshot.jpg"],
         ["Joshua Oh", "Graphic Designer", "/headshots/joshua_headshot.jpg"],
-
-        ["Ramy Kaddouri", "Website Team Lead", "/headshots/ramy_headshot.jpeg"],
-        ["Joel Chemmanur", "Website Dev", "/headshots/joel_headshot.jpg"],
-        ["Nicole Luo", "Website Dev", "/headshots/nicole_headshot.png"],
-        ["Sai Chandra", "Website Dev", "/headshots/sai_siddhish_headshot.png"],
+        ["Neeraj Pawar", "Secretary", "/headshots/neeraj_headshot.jpg"],
 
         ["Gordon Mei", "Outreach Team", "/headshots/gordon_headshot.png"],
         ["Ishani Ghosh", "Outreach Team", "/headshots/ishani_headshot.png"],
