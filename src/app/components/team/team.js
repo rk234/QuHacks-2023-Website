@@ -6,6 +6,7 @@ export default function TeamSection() {
     let teamCards = [
         ["Aryan Sharma", "Director", "/headshots/aryan_headshot.jpg"],
         ["Seonyoung Lee", "Director", "/headshots/seonyoung_headshot.jpg"],
+        
         ["Caleb Shim", "Treasurer", "/headshots/caleb_headshot.jpg"],
 
         ["Ramy Kaddouri", "Website Team Lead", "/headshots/ramy_headshot.jpeg"],
