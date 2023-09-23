@@ -44,9 +44,13 @@
     justify-content: center;
 }
 
-.row > img {
+.row > a > img {
     width: auto;
     height: 9rem;
+}
+
+.row > a:hover {
+    background-color: transparent;
 }
 
 .platinum {
