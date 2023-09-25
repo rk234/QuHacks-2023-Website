@@ -11,6 +11,13 @@
     box-shadow: 10px 10px 0px -2px var(--background-accent);
 }
 
+.learnMore {
+    padding: 0;
+    font-size: 1rem;
+    border: 1px solid var(--text-accent);
+    padding: 0.5rem;
+}
+
 .title {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -26,12 +33,6 @@
     margin-bottom: 0.5rem;
     margin-left: -0.1ch;
     margin-bottom: 1rem;
-}
-
-.learnMoreBtn {
-    margin-left: -.5rem;
-    margin-top: 3rem;
-    font-size: 1rem;
 }
 
 .sectionContainer {

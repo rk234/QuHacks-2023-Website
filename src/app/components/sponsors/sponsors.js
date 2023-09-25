@@ -19,19 +19,23 @@ export default function Sponsors() {
                 <div className={styles.row}>
                     <img src="placeholder.png" />
                 </div>
-            </div>
+            </div>*/}
 
             <div className={`${styles.tier} ${styles.silver}`}>
                 <h1 className={styles.tiername}>Silver</h1>
                 <div className={styles.row}>
-                    <img src="placeholder.png" />
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.unitedcoder.com/w/">
+                        <img style={{borderRadius: 8, border: "0.5rem solid white"}} src="sponsors/united-coder.jpg" />
+                    </a>
                 </div>
-            </div> */}
+            </div>
 
             <div className={`${styles.tier} ${styles.bronze}`}>
                 <h1 className={styles.tiername}>Bronze</h1>
                 <div className={styles.row}>
-                    <img src="sponsors/inspirit-ai.png" />
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.inspiritai.com/">
+                        <img src="sponsors/inspirit-ai.png" />
+                    </a>
                 </div>
             </div>
         </div>
