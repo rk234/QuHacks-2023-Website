@@ -20,7 +20,7 @@ export default function Timeline() {
                             <header className={styles.cardHeader}>QuHacks 2023</header>
                             <div className={styles.textContainer}>
                                 Held at Howard Community College on January 14th, 2023. There were 100+ registrants who submitted some great projects! During the event, workshops on Intro to Programming, AI, and Web Development were held. And just like last year's event (2021), there was a typeracer competition.<br /><br />
-                                There wasn't a QuHacks 2022 due to a postponment which shifted the event from December 2022 to January 2023. QuHacks 2022 is now called QuHacks 2023 to avoid confusion.
+                                There wasn't a QuHacks 2022 due to a postponement which shifted the event from December 2022 to January 2023. QuHacks 2022 is now called QuHacks 2023 to avoid confusion.
                             </div>
                         </div>
                     </div>
@@ -32,6 +32,28 @@ export default function Timeline() {
                             <header className={styles.cardHeader}>QuHacks 2021</header>
                             <div className={styles.textContainer}>
                                 Held virtually on December 18th, 2021. Even though this was a virtual, it was a very fun event with close to 70 participants and 20 project submissions! There were workshops on Java, Python, Cybersecurity, and Web Development with a typeracer competition to finish things off.
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.timelineCard}>
+                        <div className={styles.imgContainer}>
+                        <img src="timeline/pic-2020.png" />
+                        </div>
+                        <div className={styles.leftContainer}>
+                            <header className={styles.cardHeader}>QuHacks 2020</header>
+                            <div className={styles.textContainer}>
+                                Held virtually on December 18th, 2020. We offered a computer science college panel, special guest speakers, and interesting prompts for both the novice and advanced divisions! 
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.timelineCard}>
+                        <div className={styles.imgContainer}>
+                        <img src="timeline/pic-2019.jpg" />
+                        </div>
+                        <div className={styles.leftContainer}>
+                            <header className={styles.cardHeader}>QuHacks 2019</header>
+                            <div className={styles.textContainer}>
+                                Held at Towson University on December 14th, 2019. We had more than 50 participants and offered exciting crash courses on Java, Python, and Web Development! We also had some pretty cool sponsors, including Wolfram, repl.it, Balsamiq, and more!
                             </div>
                         </div>
                     </div>
