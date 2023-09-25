@@ -90,6 +90,7 @@
 .imgContainer > img {
     object-fit: cover;
     max-width: 20rem;
+    height: 100%;
 }
 
 .textContainer {
