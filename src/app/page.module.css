@@ -20,6 +20,12 @@
   background-size: cover;
 }
 
+.registerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .announcementBanner {
   background-color: var(--background-darker);
   border-bottom: 1px solid var(--text-accent);

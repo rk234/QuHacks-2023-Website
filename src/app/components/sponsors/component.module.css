@@ -94,7 +94,8 @@
         padding: 1rem;
     }
 
-    .row > img {
-        height: 5rem;
+    .row > a > img {
+        width: 100%;
+        height: auto;
     }
 }

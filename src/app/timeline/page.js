@@ -20,7 +20,7 @@ export default function Timeline() {
                             <header className={styles.cardHeader}>QuHacks 2023</header>
                             <div className={styles.textContainer}>
                                 Held at Howard Community College on January 14th, 2023. There were 100+ registrants who submitted some great projects! During the event, workshops on Intro to Programming, AI, and Web Development were held. And just like last year's event (2021), there was a typeracer competition.<br /><br />
-                                There wasn't a QuHacks 2022 due to a postponement which shifted the event from December 2022 to January 2023. QuHacks 2022 is now called QuHacks 2023 to avoid confusion.
+                                *<em>There wasn't a QuHacks 2022 due to a postponement which shifted the event from December 2022 to January 2023. QuHacks 2022 was renamed to QuHacks 2023 to avoid confusion.</em>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Timeline() {
                         <div className={styles.leftContainer}>
                             <header className={styles.cardHeader}>QuHacks 2018</header>
                             <div className={styles.textContainer}>
-                                Held at Towson University on December 8th, 2018.
+                                Held at Towson University on December 8th, 2018. Unfortunately, the website for QuHacks 2018 wasn't fully archived so the current team couldn't find any more info to put here :( . Instead, enjoy the picture of stickers!
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export default function Timeline() {
                         <div className={styles.leftContainer}>
                             <header className={styles.cardHeader}>QuHacks 2017</header>
                             <div className={styles.textContainer}>
-                                The second QuHacks event! Held at UMBC on December 9th, 2017.
+                                The second QuHacks event! Held at UMBC on December 9th, 2017. This event is 6 years old at this point, so this sentence is just here to pad some space since we couldn't find any more info for this QuHacks as well...
                             </div>
                         </div>
                     </div>
