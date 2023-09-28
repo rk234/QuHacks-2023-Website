@@ -36,7 +36,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Where is QuHacks?"} 
-                        answer={`More info on our venue will be released shortly. Stay tuned!`}
+                        answer={`QuHacks will be held in building 201 at the Johns Hopkins Applied Physics Labaratory. The address is 11100 Johns Hopkins Rd, Laurel, MD 20723. `}
                     />
                     <FaqQuestion 
                         question={"Can I use past projects?"} 
