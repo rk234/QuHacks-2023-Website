@@ -17,9 +17,10 @@ export default function Home() {
           <Image src="/logo.png" width={100} height={100} sizes='(max-width: 750px) 15rem, 20rem' className={styles.logo} />
           <div>
             <span className={styles.title}>QuHacks 2024</span>
-            <p>Date TBD</p>
+            <p>December 16th @ Johns Hopkins APL (Building 201)</p>
+            <p>9 AM - 6 PM</p>
             <div className={styles.btngroup}>
-              <button className='btn-primary' disabled={true}>Register!</button>
+              <a href="https://forms.gle/BVLfcALvh5rGR7Hb9" rel="noreferrer noopener" target='_blank'  className={`btn-primary ${styles.registerBtn}`}>Register!</a>
               <button className='btn-secondary' disabled={true}>Submit Your Project!</button>
             </div>
           </div>
