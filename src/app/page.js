@@ -19,7 +19,7 @@ export default function Home() {
             <span className={styles.title}>QuHacks 2024</span>
             <p>Date TBD</p>
             <div className={styles.btngroup}>
-              <button className='btn-primary' disabled={true}>Register!</button>
+              <a href="https://forms.gle/BVLfcALvh5rGR7Hb9" rel="noreferrer noopener" target='_blank'  className='btn-primary'>Register!</a>
               <button className='btn-secondary' disabled={true}>Submit Your Project!</button>
             </div>
           </div>
