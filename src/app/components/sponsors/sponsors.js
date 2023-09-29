@@ -36,6 +36,9 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://www.inspiritai.com/">
                         <img src="sponsors/inspirit-ai.png" />
                     </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://artofproblemsolving.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/aops.png" />
+                    </a>
                 </div>
             </div>
         </div>
