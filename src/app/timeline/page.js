@@ -31,7 +31,7 @@ export default function Timeline() {
                         <div className={styles.leftContainer}>
                             <header className={styles.cardHeader}>QuHacks 2021</header>
                             <div className={styles.textContainer}>
-                                Held virtually on December 18th, 2021. Even though this was a virtual, it was a very fun event with close to 70 participants and 20 project submissions! There were workshops on Java, Python, Cybersecurity, and Web Development with a typeracer competition to finish things off.
+                            Held virtually on December 18th, 2021. Even though this was a virtual event, it was still very fun with close to 70 participants and 20 project submissions! There were workshops on Java, Python, Cybersecurity, and Web Development with a typeracer competition to finish things off.
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export default function Timeline() {
                         <div className={styles.leftContainer}>
                             <header className={styles.cardHeader}>QuHacks 2019</header>
                             <div className={styles.textContainer}>
-                                Held at Towson University on December 14th, 2019. We had more than 50 participants and offered exciting crash courses on Java, Python, and Web Development! We also had some pretty cool sponsors, including Wolfram, repl.it, Balsamiq, and more!
+                            Held at Towson University on December 14th, 2019. We had more than 50 participants and offered exciting crash courses on Java, Python, and Web Development! We also had some pretty cool sponsors, including Wolfram, repl.it, and Balsamiq!
                             </div>
                         </div>
                     </div>
