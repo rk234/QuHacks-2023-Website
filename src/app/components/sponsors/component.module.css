@@ -42,11 +42,12 @@
     gap: 1rem;
     align-items: center;   
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row > a > img {
     width: auto;
-    height: 9rem;
+    max-height: 9rem;
 }
 
 .row > a:hover {
@@ -92,6 +93,10 @@
     .sectionContainer {
         width: 100%;
         padding: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
     }
 
     .row > a > img {
