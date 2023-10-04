@@ -47,7 +47,7 @@
 
 .row > a > img {
     width: auto;
-    max-height: 9rem;
+    height: 9rem;
 }
 
 .row > a:hover {
@@ -100,7 +100,7 @@
     }
 
     .row > a > img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 }
