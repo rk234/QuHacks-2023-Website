@@ -12,14 +12,19 @@ export default function Sponsors() {
                 <div className={styles.row}>
                     <img src="sponsors/inspirit-ai.png" />
                 </div>
-            </div>
+            </div>*/}
             
             <div className={`${styles.tier} ${styles.gold}`}>
                 <h1 className={styles.tiername}>Gold</h1>
                 <div className={styles.row}>
-                    <img src="placeholder.png" />
+                    <a rel="noreferrer noopener" target='_blank' href="https://oneilinteractive.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/oneil-interactive.png" />
+                    </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.quadeducationgroup.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="https://uploads-ssl.webflow.com/61afd21262830d1b23b88ef7/61b924e5f77f0541aa6755a6_Quad%20Education%20-%20Color%202x.svg" />
+                    </a>
                 </div>
-            </div>*/}
+            </div>
 
             <div className={`${styles.tier} ${styles.silver}`}>
                 <h1 className={styles.tiername}>Silver</h1>

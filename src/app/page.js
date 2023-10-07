@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link';
@@ -6,8 +7,15 @@ import ScheduleSection from './components/schedule/schedule';
 import TeamSection from './components/team/team';
 import Faq from './components/faq/faq';
 import Sponsors from './components/sponsors/sponsors';
+import { db } from './firebase/config';
+import { useEffect } from 'react';
+
 
 export default function Home() {
+  useEffect(() => {
+    console.log(db)
+  }, [])
+
   return (
     <main className={styles.main}>
       <div className={styles.announcementBanner}>
