@@ -11,22 +11,89 @@ export default function ScheduleSection() {
                 <thead>
                     <tr>
                         <th className={styles.th}>Time</th>
-                        <th className={styles.th}>Activity</th>
-                        <th className={styles.th}>Room #</th>
+                        <th className={styles.th}>R117</th>
+                        <th className={styles.th}>R106 & R108</th>
+                        <th className={styles.th}>R120 & R122</th>
+
                     </tr>
                     
                 </thead>
                 <tbody>
                     <tr>
-                        <td className={styles.td}>TBA...</td>
-                        <td className={styles.td}>TBA...</td>
-                        <td className={styles.td}>TBA...</td>
+                        <td className={styles.td}>9:00 AM - 10:00 AM</td>
+                        <td className={styles.td}>Breakfast and Check-In</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                        
                     </tr>
-                    {/* <tr>
-                        <td className={styles.td}>Time 2</td>
-                        <td className={styles.td}>Activity 2</td>
-                        <td className={styles.td}>Room 2</td>
-                    </tr> */}
+                    <tr>
+                        <td className={styles.td}>10:00 AM - 10:30 AM</td>
+                        <td className={styles.td}>Opening Ceremony</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>10:30 AM - 11:00 AM</td>
+                        <td className={styles.td}>Find a Team + Brainstorming</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>11:00 AM</td>
+                        <td className={styles.td}>Hacking Begins!</td>
+                        <td className={styles.td}>Hacking Begins!</td>
+                        <td className={styles.td}>Hacking Begins!</td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>12:00 PM - 1:00 PM</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}>Getting Started with Web Dev</td>
+                        <td className={styles.td}>Intro to Python</td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>1:00 PM - 2:00 PM</td>
+                        <td className={styles.td}>Lunch</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>3:00 PM - 3:30 PM</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}>Quad Education Workshop</td>
+                        <td className={styles.td}></td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>3:30 PM - 4:00 PM</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}>Intro to Cryptography</td>
+                    </tr>
+                    <tr>
+                    <td className={styles.td}>4:00 PM - 4:30 PM</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}>Monkey Type Competition</td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>5:00 PM</td>
+                        <td className={styles.td}>Hacking Ends!</td>
+                        <td className={styles.td}>Hacking Ends!</td>
+                        <td className={styles.td}>Hacking Ends!</td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>5:00 PM - 5:30 PM</td>
+                        <td className={styles.td}>Judging</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                    </tr>
+                    <tr>
+                        <td className={styles.td}>5:30 PM - 6:00 PM</td>
+                        <td className={styles.td}>Closing Ceremony</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                    </tr>
+
+           
                 </tbody>
             </table>
         </div>

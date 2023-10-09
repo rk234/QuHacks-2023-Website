@@ -28,7 +28,7 @@ export default function Home() {
             <p>December 16th @ Johns Hopkins APL (Building 201)</p>
             <p>9 AM - 6 PM</p>
             <div className={styles.btngroup}>
-              <a href="https://forms.gle/BVLfcALvh5rGR7Hb9" rel="noreferrer noopener" target='_blank'  className={`btn-primary ${styles.registerBtn}`}>Register!</a>
+              <a href="https://events.mlh.io/events/10536-quhacks-2024" rel="noreferrer noopener" target='_blank'  className={`btn-primary ${styles.registerBtn}`}>Register!</a>
               <button className='btn-secondary' disabled={true}>Submit Your Project!</button>
             </div>
           </div>
