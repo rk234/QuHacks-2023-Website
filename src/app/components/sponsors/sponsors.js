@@ -23,6 +23,9 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://www.quadeducationgroup.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="https://uploads-ssl.webflow.com/61afd21262830d1b23b88ef7/61b924e5f77f0541aa6755a6_Quad%20Education%20-%20Color%202x.svg" />
                     </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://mlh.io/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/mlh.png" />
+                    </a>
                 </div>
             </div>
 
@@ -38,9 +41,6 @@ export default function Sponsors() {
             <div className={`${styles.tier} ${styles.bronze}`}>
                 <h1 className={styles.tiername}>Bronze</h1>
                 <div className={styles.row}>
-                    <a rel="noreferrer noopener" target='_blank' href="https://www.inspiritai.com/">
-                        <img src="sponsors/inspirit-ai.png" />
-                    </a>
                     <a rel="noreferrer noopener" target='_blank' href="https://artofproblemsolving.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/aops.png" />
                     </a>
