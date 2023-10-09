@@ -23,7 +23,7 @@
     margin: auto;
     font-size: 1.15vw;
     color: #FFF0EA;
-    border: none;
+    border-collapse: collapse;
     width: 100%;
 }
 
@@ -31,6 +31,13 @@
     border-bottom: 2px solid #FFF0EA;
     padding: 1vh 2vw;
 
+}
+
+.td {
+    border: 1px solid #006600;
+    text-align: left;
+    padding:   1vw;
+    font-size: 2.75vh;
 }
 
 .th {
@@ -42,12 +49,6 @@
     font-size: 2.5rem;
 }
 
-.td{
-    border: none;
-    text-align: left;
-    padding: .5vw;
-    font-size: 2rem;
-}
 
 @media screen and (max-width: 750px) {
     .sectionContainer {
@@ -64,18 +65,18 @@
         font-size: 2rem;
     }
     .th {
-        color: #00c200;;
+        color: #00c200;
         border-bottom: 2px solid #FFF0EA;
         padding: 1vh 2vw;
         text-align: left;
         padding: .5vw;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .td{
-        border: none;
+        border: 1px solid #006600;
         text-align: left;
         padding: .5vw;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 }
