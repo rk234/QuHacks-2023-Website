@@ -13,11 +13,7 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   let [showRegisterModal, setShowRegisterModal] = useState(true);
-
-  useEffect(() => {
-    console.log(db)
-  }, [])
-
+  
   return (
     <main className={styles.main}>
       {
