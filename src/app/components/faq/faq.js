@@ -26,7 +26,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Can I win any prizes?"} 
-                        answer={`But of course! Prize amounts will be announced at the event, but you can win both swag and money!`}
+                        answer={`But of course! You can win both swag and cool tech! You'll have the chance to win gaming monitors, tablets, headphones, drones, and more...`}
                     />
                 </div>
                 <div className={styles.column}>

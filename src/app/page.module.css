@@ -3,6 +3,57 @@
   height: 100%;
 }
 
+.modalContainer {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.698);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal {
+  background-color: var(--background-darker);
+  max-width: 50rem;
+  border: 1px solid var(--text-accent);
+}
+
+.modalHeader {
+  padding: 1rem;
+  background-color: var(--text-accent);
+  color: var(--background-darker)
+}
+
+.modalHeader > h2 {
+  margin: 0;
+}
+
+.modalContent {
+  padding: 1rem;
+}
+
+.modalContent > p {
+  margin-bottom: 2rem;
+}
+.modalContent > p > a {
+  padding: 0;
+  text-decoration: underline 1px;
+}
+
+.modalContent > button {
+  margin-right: 0.5rem;
+}
+
+.modalBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
 
 .homecontainer {
   display: flex;
@@ -24,7 +75,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
+
 
 .announcementBanner {
   background-color: var(--background-darker);
