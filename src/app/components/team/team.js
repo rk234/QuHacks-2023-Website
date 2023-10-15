@@ -21,7 +21,7 @@ export default function TeamSection() {
         ["Ishani Ghosh", "Outreach Team", "/headshots/ishani_headshot.png"],
         ["Luis Valerio", "Outreach Team", "/headshots/luis_headshot.png"],
 
-        ["Akhil Shastry", "Sponsor Liason", "/headshots/akhil_headshot.jpg"],
+        ["Akhil Shastry", "Sponsor Liaison", "/headshots/akhil_headshot.jpg"],
 
         ["Jaden  Li", "Workshop Creator", "/headshots/jaden_headshot.jpg"],
         ["Neeraj Pawar", "Workshop Creator", "/headshots/neeraj_headshot.jpg"],

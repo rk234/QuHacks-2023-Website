@@ -47,6 +47,9 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://www.desmos.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/desmos.png" />
                     </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.wolfram.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/wolfram.png" />
+                    </a>
                 </div>
             </div>
         </div>
