@@ -1,0 +1,39 @@
+.main {
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+}  
+
+.headerContainer {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--background-darker);
+    border-bottom: 1px solid var(--text-accent);
+}
+
+.searchOptions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.galleryContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: var(--background);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.project {
+    width: 10rem;
+    height: 20rem;
+}
+
+.searchBox {
+    flex: 1;
+}

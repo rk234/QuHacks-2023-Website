@@ -61,6 +61,23 @@ body {
   overflow-y: auto;
 }
 
+input {
+  border: 2px solid var(--text-accent);
+  padding: 0.5rem;
+  background-color: var(--background-accent);
+  color: white;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+select {
+  border: 2px solid var(--text-accent);
+  padding: 0.5rem;
+  background-color: var(--background-accent);
+  color: white;
+  font-family: monospace;
+  font-size: 1rem;
+}
 a {
   text-decoration: none;
   color: var(--text-accent);
