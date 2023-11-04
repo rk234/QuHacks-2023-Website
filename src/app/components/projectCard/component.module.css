@@ -1,18 +1,35 @@
 .container {
     border: 1px solid var(--text-accent);
-    max-width: 20rem;
     max-height: 35rem;
     display: flex;
     flex-direction: column;
     background-color: var(--background-darker);
+    cursor: pointer;
 }
 
-.imgContainer > img{
+.imgContainer > img {
+    height: 17rem;
+    width: auto;
     max-width: 100%;
-    height: auto;
+    contain: content;
 }
 
-.prizeBadge {
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracksContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: var(--background-accent);
+}
+
+.badge {
     font-family: monospace;
     background-color: var(--text-accent);
     color: var(--background);

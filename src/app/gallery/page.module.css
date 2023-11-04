@@ -2,7 +2,7 @@
     background-color: var(--background);
     width: 100%;
     height: 100%;
-}  
+}
 
 .headerContainer {
     padding: 1rem;
@@ -30,10 +30,103 @@
 }
 
 .project {
-    width: 10rem;
-    height: 20rem;
+    max-width: 20rem;
 }
 
 .searchBox {
     flex: 1;
+}
+
+.modalContainer {
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.698);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal {
+    background-color: var(--background-darker);
+    max-width: 50rem;
+    border: 1px solid var(--text-accent);
+}
+
+.modalHeader {
+    padding: 1rem;
+    background-color: var(--text-accent);
+    color: var(--background-darker)
+}
+
+.modalHeader>h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.modalContent {
+    padding: 1rem;
+}
+
+.modalContent>p {
+    margin-bottom: 2rem;
+}
+
+.modalContent>p>a {
+    padding: 0;
+    text-decoration: underline 1px;
+}
+
+.modalContent>button {
+    margin-right: 0.5rem;
+}
+
+.modalBtns {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    height: 3.5rem;
+}
+
+.demobtn, .gitbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.demobtn > svg {
+    stroke: var(--text-accent)
+}
+
+.demobtn:hover > svg {
+    stroke: var(--text)
+}
+
+.demobtn {
+    flex-grow: 1;
+}
+
+.modalBtns > a > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    stroke-width: 2px;
+}
+
+@media screen and (max-width: 850px) {
+    .galleryContainer {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .project {
+        max-width: none;
+        width: 100%;
+    }
 }
