@@ -26,7 +26,7 @@ export default function ProjectCard({project, onClick, className}) {
             <div className={styles.tracksContainer}>
                 Tracks 
                 {project.tracks.map((track, index) => 
-                    <div className={styles.badge}>
+                    <div key={index} className={styles.badge}>
                         {track}
                     </div>
                 )}

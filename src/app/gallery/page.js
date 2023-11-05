@@ -1,7 +1,7 @@
 "use client"
 import ProjectCard from "../components/projectCard/projectCard"
 import styles from "./page.module.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function GalleryPage() {
     let [projects, setProjects] = useState([
@@ -56,6 +56,11 @@ export default function GalleryPage() {
     let [project, setProject] = useState()
     let [query, setQuery] = useState("")
 
+    useEffect(() => {
+        console.log("Hello World!")
+        //fetch projects from service here
+    }, [])
+
     function showModal(project) {
         setProject(project)
         setShowProjectModal(true)
@@ -101,7 +106,7 @@ export default function GalleryPage() {
                         : ""}
                         {project.github ? 
                             <a href={project.github} rel="noreferrer noopener" target='_blank'  className={`btn-secondary ${styles.gitbtn}`}> 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
                             </svg>
 
