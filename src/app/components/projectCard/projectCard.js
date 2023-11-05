@@ -2,7 +2,7 @@ import styles from "./component.module.css"
 
 export default function ProjectCard({project, onClick, className}) {
     return (
-        <div className={`${styles.container} ${className}`} onClick={() => onClick(project)}>
+        <main className={`${styles.container} ${className}`} onClick={() => onClick(project)}>
             <div className={styles.imgContainer}>
                 <img className={styles.img} src={(project.screenshot_url && project.screenshot_url.trim().length) > 0 ? project.screenshot_url : "placeholder/quhacks-white.png"} />
             </div>
@@ -32,6 +32,6 @@ export default function ProjectCard({project, onClick, className}) {
                 )}
             </div>
             : ""}
-        </div>
+        </main>
     )
 }
