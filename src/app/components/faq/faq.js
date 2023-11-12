@@ -36,7 +36,7 @@ export default function Faq() {
                     />
                     <FaqQuestion 
                         question={"Where is QuHacks?"} 
-                        answer={`QuHacks will be held in building 201 at the Johns Hopkins Applied Physics Laboratory. The address is 11100 Johns Hopkins Rd, Laurel, MD 20723. `}
+                        answer={`QuHacks will be held in building 201 at the Johns Hopkins Applied Physics Laboratory. The address is 11091 Johns Hopkins Rd, Fulton, MD 20759.`}
                     />
                     <FaqQuestion 
                         question={"Can I use past projects?"} 
