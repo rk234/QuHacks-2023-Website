@@ -1,5 +1,5 @@
 import { db, fileDB } from "../firebase/config";
-import { getFirestore, getDoc, updateDoc, doc, setDoc } from '@firebase/firestore/lite';
+import { getFirestore, getDoc, getDocs, updateDoc, doc, setDoc, collection } from '@firebase/firestore/lite';
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import Compressor from 'compressorjs';
 
@@ -54,7 +54,7 @@ async function areSubmissionsOpen() {
 }
 
 async function getProjects() {
-
+    return await getDocs(collection(db, "projects"));
 }
 
 export {submitProject, areSubmissionsOpen, getProjects};

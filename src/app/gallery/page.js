@@ -1,64 +1,73 @@
 "use client"
 import ProjectCard from "../components/projectCard/projectCard"
+import { getProjects } from "../services/projectService"
 import styles from "./page.module.css"
 import { useEffect, useState } from "react"
 
 export default function GalleryPage() {
     let [projects, setProjects] = useState([
-        {
-            name: "Wike",
-            description: "Wike is a Wikipedia reader for the GNOME Desktop. It provides access to all the content of Wikipedia in a native application, with a simpler and distraction-free view of articles.",
-            team_members: ["Hugo Olabera", "Contributors"],
-            screenshot_url: "https://github.com/hugolabe/Wike/raw/master/data/screenshots/wike-01.png",
-            tracks: ["game", "ai"],
-            github: "https://github.com/hugolabe/Wike",
-            demo: "https://flathub.org/apps/com.github.hugolabe.Wike",
-            built_with: "GTK4, Libadwaita, Python",
-            public: true,
-            prize: {
-                title: "1st place", rank: 0
-            }
-        },
-        {
-            name: "Curtail",
-            description: "Curtail is a simple and useful image compressor with support for multiple formats and bulk compression.",
-            team_members: ["Hugo Posnic", "Contributors"],
-            screenshot_url: "https://github.com/Huluti/Curtail/raw/master/data/screenshots/screen1.png",
-            tracks: ["game", "ai"],
-            github: "https://github.com/Huluti/Curtail",
-            demo: "https://flathub.org/apps/com.github.huluti.Curtail",
-            built_with: "GTK4, Libadwaita, Python",
-            public: true,
-            prize: {
-                title: "2nd place", rank: 1
-            }
-        },
-        {
-            name: "Demo",
-            description: "demo text demo text demo text demo text demo text demo text demo text",
-            team_members: ["Ramy"],
-            screenshot_url: "",
-            tracks: [],
-            built_with: "Nothing",
-            public: true,
-        },
-        {
-            name: "Demo",
-            description: "demo text demo text demo text demo text demo text demo text demo text",
-            team_members: ["Ramy"],
-            screenshot_url: "",
-            tracks: [],
-            built_with: "Nothing",
-            public: true,
-        }
+        // {
+        //     name: "Wike",
+        //     description: "Wike is a Wikipedia reader for the GNOME Desktop. It provides access to all the content of Wikipedia in a native application, with a simpler and distraction-free view of articles.",
+        //     team_members: ["Hugo Olabera", "Contributors"],
+        //     screenshot_url: "https://github.com/hugolabe/Wike/raw/master/data/screenshots/wike-01.png",
+        //     tracks: ["game", "ai"],
+        //     github: "https://github.com/hugolabe/Wike",
+        //     demo: "https://flathub.org/apps/com.github.hugolabe.Wike",
+        //     built_with: "GTK4, Libadwaita, Python",
+        //     public: true,
+        //     prize: {
+        //         title: "1st place", rank: 0
+        //     }
+        // },
+        // {
+        //     name: "Curtail",
+        //     description: "Curtail is a simple and useful image compressor with support for multiple formats and bulk compression.",
+        //     team_members: ["Hugo Posnic", "Contributors"],
+        //     screenshot_url: "https://github.com/Huluti/Curtail/raw/master/data/screenshots/screen1.png",
+        //     tracks: ["game", "ai"],
+        //     github: "https://github.com/Huluti/Curtail",
+        //     demo: "https://flathub.org/apps/com.github.huluti.Curtail",
+        //     built_with: "GTK4, Libadwaita, Python",
+        //     public: true,
+        //     prize: {
+        //         title: "2nd place", rank: 1
+        //     }
+        // },
+        // {
+        //     name: "Demo",
+        //     description: "demo text demo text demo text demo text demo text demo text demo text",
+        //     team_members: ["Ramy"],
+        //     screenshot_url: "",
+        //     tracks: [],
+        //     built_with: "Nothing",
+        //     public: true,
+        // },
+        // {
+        //     name: "Demo",
+        //     description: "demo text demo text demo text demo text demo text demo text demo text",
+        //     team_members: ["Ramy"],
+        //     screenshot_url: "",
+        //     tracks: [],
+        //     built_with: "Nothing",
+        //     public: true,
+        // }
     ])
     let [showProjectModal, setShowProjectModal] = useState(false)
     let [project, setProject] = useState()
     let [query, setQuery] = useState("")
+    let [projectElements, setProjectElements] = useState([])
 
     useEffect(() => {
-        console.log("Hello World!")
-        //fetch projects from service here
+        // console.log("Hello World!")
+        // fetch projects from service here
+        async function fetchData () {
+            let fetchedProjects = await getProjects()
+            fetchedProjects.forEach(proj => {
+                setProjects(projects => [...projects, proj.data()])
+            })
+        }
+        fetchData();
     }, [])
 
     function showModal(project) {
@@ -68,7 +77,7 @@ export default function GalleryPage() {
 
     function filter(allProjects) {
         return allProjects
-            .filter(proj => (proj.name+proj.description+proj.team_members.join(" ")).toLowerCase().includes(query))
+            .filter(proj => (proj.name+proj.description+proj.team_members.join(" ")).toLowerCase().includes(query.toLowerCase()))
             .sort((a, b) => {
                 if(a.prize && b.prize) {
                     return a.prize.rank-b.prize.rank
