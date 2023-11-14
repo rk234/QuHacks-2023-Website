@@ -27,6 +27,7 @@
     padding: 0.5rem;
     align-items: center;
     background-color: var(--background-accent);
+    margin-top: auto;
 }
 
 .badge {

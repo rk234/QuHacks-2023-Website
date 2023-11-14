@@ -56,16 +56,17 @@ export default function GalleryPage() {
     let [showProjectModal, setShowProjectModal] = useState(false)
     let [project, setProject] = useState()
     let [query, setQuery] = useState("")
-    let [projectElements, setProjectElements] = useState([])
 
     useEffect(() => {
         // console.log("Hello World!")
         // fetch projects from service here
         async function fetchData () {
             let fetchedProjects = await getProjects()
+            let projs = []
             fetchedProjects.forEach(proj => {
-                setProjects(projects => [...projects, proj.data()])
+                projs.push(proj.data())
             })
+            setProjects(projs)
         }
         fetchData();
     }, [])
