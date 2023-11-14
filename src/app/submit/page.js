@@ -138,7 +138,7 @@ export default function SubmissionFormPage() {
                         <input id="publicCheck" type="checkbox" defaultChecked/>
                         <label >  Yes</label>
                         <br></br><br></br>
-                        <button type="logIn" onClick={attemptSubmission}>Log In</button>
+                        <button className='btn-primary' type="submit" onClick={attemptSubmission}>Submit</button>
                     </div>
                 </div>
             </div>

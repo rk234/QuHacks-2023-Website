@@ -10,6 +10,18 @@
     padding-left: 0;
 }
 
+.btn-primary {
+    border-radius: 0;
+    border: var(--text-accent) 1px solid;
+    color: var(--text-accent);
+    padding: 1rem;
+    background: none;
+    font-size: 1rem;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+
 .sectionContainer {
     display: flex;
     flex-direction: column;
