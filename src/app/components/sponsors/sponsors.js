@@ -35,6 +35,9 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://www.unitedcoder.com/w/">
                         <img style={{borderRadius: 8, border: "0.5rem solid white"}} src="sponsors/united-coder.jpg" />
                     </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.range.com/">
+                        <img style={{borderRadius: 8, border: "0.5rem solid white", backgroundColor: "white"}} src="sponsors/range.png" />
+                    </a>
                 </div>
             </div>
 
