@@ -38,6 +38,9 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://www.range.com/">
                         <img style={{borderRadius: 8, border: "0.5rem solid white", backgroundColor: "white"}} src="sponsors/range.png" />
                     </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.datanetworks.com/">
+                        <img style={{borderRadius: 8, border: "0.5rem solid white", backgroundColor: "white"}} src="sponsors/data-networks.png" />
+                    </a>
                 </div>
             </div>
 
