@@ -2,43 +2,52 @@
 import { useState } from 'react'
 import { db } from "../firebase/config";
 import styles from "./page.module.css"
-import { submitProject, areSubmissionsOpen }from "../services/projectService.js"
+import { submitProject, areSubmissionsOpen } from "../services/projectService.js"
+
 
 export default function SubmissionFormPage() {
+    const [memberName, setName] = useState('');
+    const [members, addMembers] = useState([]);
+    let nextId = 0;
     //TODO: Submission form should be disabled/enabled based on config flag on firebase
     //in order to prevent submissions out-of-competition and after the deadline.
     //Once ready call areSubmissionsOpen() from projectService.js to show/hide the form
 
-    async function attemptSubmission(){
-        
+    async function attemptSubmission() {
+
         let submissionsOpen = await areSubmissionsOpen();
 
-        if(submissionsOpen.open) {
+        if (submissionsOpen.open) {
 
             let validation = validateSubmission();
-            if(validation[0]) {
+            if (validation[0]) {
                 submitProject(validation[1]);
             } else {
                 alert(validation[1]);
             }
-            
+
         } else {
-            alert("=== Submissions Closed === \n\n"+submissionsOpen.msg);
+            alert("=== Submissions Closed === \n\n" + submissionsOpen.msg);
         }
     }
 
+    function addTeamMembers() {
+
+
+    }
     // returns [false, "reason for failure"] if submission is invalid
     // returns [true, projectObject] if submission is valid
     function validateSubmission() {
         let projectName = document.getElementById("projectName").value;
-        let teamMembersRaw = document.getElementById("team").value;
+       // let teamMembersRaw = document.getElementById("team").value;
+        
 
-        let teamMembers = [];
-        for(let member of teamMembersRaw.split(",")) {
-            if(member.trim()) {
-                teamMembers.push(member.trim());
-            }
-        }
+        // let teamMembers = [];
+        // for (let member of teamMembersRaw.split(",")) {
+        //     if (member.trim()) {
+        //         teamMembers.push(member.trim());
+        //     }
+        // }
 
         let desc = document.getElementById("description").value;
         let screenshot = document.getElementById("screenshot").files[0];
@@ -48,50 +57,50 @@ export default function SubmissionFormPage() {
         let publicProject = document.getElementById("publicCheck").checked;
 
         let tracks = [];
-        if(document.getElementById("mathCheck").checked) {
+        if (document.getElementById("mathCheck").checked) {
             tracks.push("Math");
         }
-        if(document.getElementById("aiCheck").checked) {
+        if (document.getElementById("aiCheck").checked) {
             tracks.push("AI");
         }
-        if(document.getElementById("gameCheck").checked) {
+        if (document.getElementById("gameCheck").checked) {
             tracks.push("Game");
         }
 
-        
-        if(projectName.trim().length<1) {
+
+        if (projectName.trim().length < 1) {
             return [false, "Please enter your project's name."];
         }
-        if(teamMembers.length < 1) {
+        if (teamMembers.length < 1) {
             return [false, "Please list all team members."];
         }
-        if(desc.trim().length < 1) {
+        if (desc.trim().length < 1) {
             return [false, "Please include a description of your project."];
         }
-        if(!screenshot) {
+        if (!screenshot) {
             return [false, "Please include at least one screenshot of your project."];
         }
-        if(tracks.length < 1) {
+        if (tracks.length < 1) {
             return [false, "Select at least one track."];
         }
-        
+
         let project = {
             description: desc,
             name: projectName,
             public: publicProject,
             screenshot: screenshot,
-            team_members: teamMembers,
+            team_members: members,
             tracks: tracks,
             prize: null
         }
 
-        if(github.trim()) {
+        if (github.trim()) {
             project.github = github;
         }
-        if(builtWith.trim()) {
+        if (builtWith.trim()) {
             project.build_with = builtWith;
         }
-        if(demo.trim()) {
+        if (demo.trim()) {
             project.demo = demo;
         }
 
@@ -114,8 +123,26 @@ export default function SubmissionFormPage() {
                     <div className={styles.section}>
                         <h2>Project Name</h2>
                         <input id="projectName"></input><br></br><br></br>
-                        <h2>Team Members (comma separated)</h2>
-                        <input id="team"></input><br></br><br></br>
+                        <h2>Team Members (enter names one at a time)</h2>
+                        <input
+                            value={memberName}
+                            onChange={e => setName(e.target.value)}
+                        />
+                        <br></br><br></br>
+                        {/* <input id="team"></input><br></br><br></br> */}
+                        <button className='btn-primary' type="addMember" onClick={() => {
+                            addMembers([
+                                ...members,
+                                { id: nextId++, name: memberName }
+                            ]);
+                        }}>Add Member</button>
+                        <br></br><br></br>
+                        <ul className = {styles.list}>
+                            {members.map(member => (
+                                <li key={member.id}>{member.name}</li>
+                            ))}
+                        </ul>
+                        <br></br>
                         <h2>Description</h2>
                         <textarea id="description"></textarea><br></br><br></br>
                         <h2>Screenshot of Project</h2>
@@ -135,7 +162,7 @@ export default function SubmissionFormPage() {
                         <h2>Languages, technologies, libraries used (optional)</h2>
                         <input id="builtWith"></input><br></br><br></br>
                         <h2>Do you want your project to be displayed in our project gallery?</h2>
-                        <input id="publicCheck" type="checkbox" defaultChecked/>
+                        <input id="publicCheck" type="checkbox" defaultChecked />
                         <label >  Yes</label>
                         <br></br><br></br>
                         <button className='btn-primary' type="submit" onClick={attemptSubmission}>Submit</button>
