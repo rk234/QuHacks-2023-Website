@@ -7,8 +7,13 @@ import { submitProject, areSubmissionsOpen } from "../services/projectService.js
 
 export default function SubmissionFormPage() {
     const [memberName, setName] = useState('');
-    const [members, addMembers] = useState([]);
-    let nextId = 0;
+    const [members, setMembers] = useState([]);
+    const [isHovered, setIsHovered] = useState(false);
+    const[memberId, setId] = useState(0);
+
+    const strikethroughStyle = {
+        textDecoration: 'line-through',
+    };
     //TODO: Submission form should be disabled/enabled based on config flag on firebase
     //in order to prevent submissions out-of-competition and after the deadline.
     //Once ready call areSubmissionsOpen() from projectService.js to show/hide the form
@@ -39,16 +44,6 @@ export default function SubmissionFormPage() {
     // returns [true, projectObject] if submission is valid
     function validateSubmission() {
         let projectName = document.getElementById("projectName").value;
-       // let teamMembersRaw = document.getElementById("team").value;
-        
-
-        // let teamMembers = [];
-        // for (let member of teamMembersRaw.split(",")) {
-        //     if (member.trim()) {
-        //         teamMembers.push(member.trim());
-        //     }
-        // }
-
         let desc = document.getElementById("description").value;
         let screenshot = document.getElementById("screenshot").files[0];
         let github = document.getElementById("github").value;
@@ -71,7 +66,7 @@ export default function SubmissionFormPage() {
         if (projectName.trim().length < 1) {
             return [false, "Please enter your project's name."];
         }
-        if (teamMembers.length < 1) {
+        if (members.length < 1) {
             return [false, "Please list all team members."];
         }
         if (desc.trim().length < 1) {
@@ -89,7 +84,7 @@ export default function SubmissionFormPage() {
             name: projectName,
             public: publicProject,
             screenshot: screenshot,
-            team_members: members,
+            team_members: members.map(m => m.name),
             tracks: tracks,
             prize: null
         }
@@ -103,9 +98,7 @@ export default function SubmissionFormPage() {
         if (demo.trim()) {
             project.demo = demo;
         }
-
         return [true, project];
-
     }
 
     return (
@@ -129,17 +122,26 @@ export default function SubmissionFormPage() {
                             onChange={e => setName(e.target.value)}
                         />
                         <br></br><br></br>
-                        {/* <input id="team"></input><br></br><br></br> */}
                         <button className='btn-primary' type="addMember" onClick={() => {
-                            addMembers([
+                            console.log(memberId)
+                            setMembers([
                                 ...members,
-                                { id: nextId++, name: memberName }
+                                { id: memberId, name: memberName }
                             ]);
+                            setId(memberId+1)
                         }}>Add Member</button>
                         <br></br><br></br>
-                        <ul className = {styles.list}>
+                        <ul className={styles.list}>
                             {members.map(member => (
-                                <li key={member.id}>{member.name}</li>
+                                <li key={member.id} className={styles.memberName} onClick={() => {
+                                    console.log(member.id);
+                                    setMembers(
+                                        members.filter(a =>
+                                            a.id !== member.id
+                                        )
+                                    );
+                                }}>
+                                    {member.name}</li>
                             ))}
                         </ul>
                         <br></br>
