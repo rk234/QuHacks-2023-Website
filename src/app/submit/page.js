@@ -123,7 +123,6 @@ export default function SubmissionFormPage() {
                         />
                         <br></br><br></br>
                         <button className='btn-primary' type="addMember" onClick={() => {
-                            console.log(memberId)
                             setMembers([
                                 ...members,
                                 { id: memberId, name: memberName }
@@ -134,7 +133,6 @@ export default function SubmissionFormPage() {
                         <ul className={styles.list}>
                             {members.map(member => (
                                 <li key={member.id} className={styles.memberName} onClick={() => {
-                                    console.log(member.id);
                                     setMembers(
                                         members.filter(a =>
                                             a.id !== member.id
