@@ -7,12 +7,14 @@
     cursor: pointer;
 }
 
+
 .imgContainer > img {
     height: 17rem;
     width: auto;
     max-width: 100%;
-    contain: content;
+    object-fit: contain;
 }
+
 
 .imgContainer {
     display: flex;

@@ -53,8 +53,12 @@ async function areSubmissionsOpen() {
     return (await getDoc(doc(db, "config/form"))).data();
 }
 
+async function isGalleryOpen() {
+    return (await getDoc(doc(db, "config/gallery"))).data().open;
+}
+
 async function getProjects() {
     return await getDocs(collection(db, "projects"));
 }
 
-export {submitProject, areSubmissionsOpen, getProjects};
+export {submitProject, areSubmissionsOpen, getProjects, isGalleryOpen};
