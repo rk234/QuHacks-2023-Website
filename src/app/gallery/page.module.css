@@ -35,23 +35,27 @@
 }
 
 .galleryContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+    justify-items: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
     background-color: var(--background);
     padding: 1rem;
-    gap: 1rem;
     min-height: 100vh;
 }
 
 .project {
-    max-width: 20rem;
-    max-height: 30rem;
+    justify-self: stretch;
 }
 
 .searchBox {
     flex: 1;
+}
+
+.emptyContainer {
+    height: 100vh;
 }
 
 .modalContainer {

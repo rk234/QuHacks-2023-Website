@@ -12,7 +12,7 @@ export default function ProjectCard({project, onClick, className}) {
 
                     {project.prize ? 
                         <div className={styles.badge}>
-                            {project.prize.title}
+                            [{project.prize.title}]
                         </div>
                         : "" 
                     }

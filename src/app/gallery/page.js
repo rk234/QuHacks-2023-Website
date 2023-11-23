@@ -166,18 +166,22 @@ export default function GalleryPage() {
                     </select>
                 </div>
             </div>
-            <div className={styles.galleryContainer}>
-                {
+            
+            {
                 displayProjects.length == 0 ? 
-                <div className={styles.noResultContainer}>
-                    <h1 style={{color: "var(--text-accent)"}}>&gt;</h1> 
-                    <h1>{emptyMsg}</h1>
-                </div> :
-                (displayProjects.map((proj, index) =>
-                    <ProjectCard key={index} className={styles.project} project={proj} onClick={() => showModal(proj)}></ProjectCard>
-                ))
-                }
-            </div>
+                    <div className={styles.emptyContainer}>
+                        <div className={styles.noResultContainer}>
+                            <h1 style={{color: "var(--text-accent)"}}>&gt;</h1> 
+                            <h1>{emptyMsg}</h1>
+                        </div>
+                    </div> 
+                :
+                <div className={styles.galleryContainer}>
+                    {(displayProjects.map((proj, index) =>
+                        <ProjectCard key={index} className={styles.project} project={proj} onClick={() => showModal(proj)}></ProjectCard>
+                    ))}
+                </div>
+            }
         </main>
     )
 }
