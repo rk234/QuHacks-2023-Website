@@ -37,7 +37,7 @@
 .galleryContainer {
     display: grid;
     grid-template-rows: max-content;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
     justify-items: center;
     column-gap: 2rem;
     row-gap: 1rem;
