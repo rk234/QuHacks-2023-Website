@@ -94,6 +94,7 @@ a:hover {
 .page {
   width: 100%;
   flex-grow: 1;
+  padding-top: 4rem;
 }
 
 button:disabled {
@@ -169,4 +170,10 @@ hr {
   border-bottom: 1px dashed gray;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 750px) {
+ .page {
+  padding-top: 3rem;
+ }
 }
