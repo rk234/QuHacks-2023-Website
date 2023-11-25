@@ -15,7 +15,8 @@
 .mobileLinks {
     position: fixed;
     top: 3rem;
-    background-color: var(--background-darker);
+    /*background-color: var(--background-darker);*/
+    backdrop-filter: blur(15px);
     width: 100vw;
     height: 100vh;
     z-index: 10;
