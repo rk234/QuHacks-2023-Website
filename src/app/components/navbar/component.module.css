@@ -5,17 +5,18 @@
     gap: 1rem;
     width: 100%;
     padding: 1rem;
-    background-color: var(--background-darker);
+    background-color: rgba(0, 41, 0, 0.4);
+    backdrop-filter: blur(15px);
     align-items: center;
     border-bottom: 1px solid var(--text-accent);
     height: 4rem;
     z-index: 10;
 }
-
 .mobileLinks {
     position: fixed;
     top: 3rem;
     /*background-color: var(--background-darker);*/
+    background-color: rgba(0, 41, 0, 0.2);
     backdrop-filter: blur(15px);
     width: 100vw;
     height: 100vh;
@@ -51,15 +52,16 @@
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 1ch solid var(--text-accent); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
+    width: 15ch;
     animation: 
-        typing 1.5s steps(13, end),
+        typing 1.5s steps(15),
         blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 13ch }
+    to { width: 15ch }
 }
 
 /* The typewriter cursor effect */
@@ -95,6 +97,9 @@
 }
 .linkrow:nth-child(5) {
     animation-delay: 2.4s;
+}
+.linkrow:nth-child(6) {
+    animation-delay: 2.6s;
 }
 
 @keyframes showrow {
@@ -158,8 +163,12 @@
     background: none;
 }
 
-.mobnavlink .navlink {
-    font-size: 1.15rem;
+.mobnavlink {
+    font-size: 1rem;
+}
+
+.navlink {
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width: 750px) {
@@ -175,6 +184,10 @@
     .name {
         font-size: 1.25rem;
         padding: 0;
+    }
+
+    .name>span:nth-child(2) {
+        display: none;
     }
 
     .navlink {
