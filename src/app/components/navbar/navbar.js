@@ -40,6 +40,7 @@ export default function NavBar() {
         <div className={styles.linkrow}><Link className={styles.mobnavlink} href='/#schedule' onClick={hideLinks}>./schedule</Link><div className={styles.spacer}></div><span className={styles.size}>{Math.round(Math.random()*100)} KB</span></div>
         <div className={styles.linkrow}><Link className={styles.mobnavlink} href="/#faq" onClick={hideLinks}>./faq</Link><div className={styles.spacer}></div><span className={styles.size}>{Math.round(Math.random()*100)} KB</span></div>
         <div className={styles.linkrow}><Link className={styles.mobnavlink} href="/#team"onClick={hideLinks}>./team</Link><div className={styles.spacer}></div><span className={styles.size}>{Math.round(Math.random()*100)} KB</span></div>
+        <div className={styles.linkrow}><Link className={styles.mobnavlink} href="/timeline"onClick={hideLinks}>./timeline</Link><div className={styles.spacer}></div><span className={styles.size}>{Math.round(Math.random()*100)} KB</span></div>
         <div className={styles.linkrow}><Link className={styles.mobnavlink} rel="noreferrer noopener" target='_blank' href="https://discord.gg/H2EteNDhEP">./discord</Link><div className={styles.spacer} onClick={hideLinks}></div><span className={styles.size}>{Math.round(Math.random()*100)} KB</span></div>
       </div>
     </div>
