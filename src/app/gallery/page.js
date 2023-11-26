@@ -73,7 +73,7 @@ export default function GalleryPage() {
                     projs.push(proj.data())
                 })
                 setProjects(projs)
-                setDisplayProjects(projs)
+                setDisplayProjects(filter(projs))
                 setEmptyMsg("Nothing to see here...")
             } else {
                 setEmptyMsg("Nothing to see here. The gallery isn't open.")
