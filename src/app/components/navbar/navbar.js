@@ -2,9 +2,11 @@
 import { useState } from 'react';
 import styles from './component.module.css'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function NavBar() {
   let [mobLinksShown, setMobLinksShown] = useState(false)
+  const router = useRouter()
 
   function toggleLinks() {
     setMobLinksShown(!mobLinksShown);
@@ -18,14 +20,20 @@ export default function NavBar() {
     return new Date().toUTCString();
   }
   
-  function scrollIntoViewWithOffset(selector, offset) {
-    window.scrollTo({
-      behavior: 'smooth',
-      top:
-        document.querySelector(selector).getBoundingClientRect().top -
-        document.body.getBoundingClientRect().top -
-        offset,
-    })
+  //this is a very hacky solution, pls don't try to use this
+  //function for anything other than navbar links
+  async function scrollIntoViewWithOffset(selector, offset) {
+    if(!document.querySelector(selector)) {
+      router.push("/"+selector)
+    } else {
+      window.scrollTo({
+        behavior: 'smooth',
+        top:
+          document.querySelector(selector).getBoundingClientRect().top -
+          document.body.getBoundingClientRect().top -
+          offset,
+      })
+    }
   }
 
   function moblink(target) {
