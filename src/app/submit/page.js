@@ -11,9 +11,6 @@ export default function SubmissionFormPage() {
     const [isHovered, setIsHovered] = useState(false);
     const[memberId, setId] = useState(0);
 
-    const strikethroughStyle = {
-        textDecoration: 'line-through',
-    };
     //TODO: Submission form should be disabled/enabled based on config flag on firebase
     //in order to prevent submissions out-of-competition and after the deadline.
     //Once ready call areSubmissionsOpen() from projectService.js to show/hide the form
@@ -115,7 +112,7 @@ export default function SubmissionFormPage() {
                 <div className={styles.sectionContainer}>
                     <div className={styles.section}>
                         <h2>Project Name</h2>
-                        <input id="projectName"></input><br></br><br></br>
+                        <input className={styles.input} id="projectName"></input><br></br><br></br>
                         <h2>Team Members (enter names one at a time)</h2>
                         <input
                             value={memberName}
@@ -144,25 +141,25 @@ export default function SubmissionFormPage() {
                         </ul>
                         <br></br>
                         <h2>Description</h2>
-                        <textarea id="description"></textarea><br></br><br></br>
+                        <textarea className={styles.textarea} id="description"></textarea><br></br><br></br>
                         <h2>Screenshot of Project</h2>
                         <input type="file" id="screenshot" accept="image/png, image/jpeg" /><br></br><br></br>
                         <h2>Select Project Tracks Below: </h2>
-                        <input id="mathCheck" type="checkbox" />
+                        <input className={styles.checkbox} id="mathCheck" type="checkbox" />
                         <label >  Math</label><br></br>
-                        <input id="aiCheck" type="checkbox" />
+                        <input className={styles.checkbox} id="aiCheck" type="checkbox" />
                         <label >  AI</label><br></br>
-                        <input id="gameCheck" type="checkbox" />
+                        <input className={styles.checkbox} id="gameCheck" type="checkbox" />
                         <label >  Game</label>
                         <br></br><br></br>
                         <h2>Link to Project GitHub (optional) </h2>
-                        <input id="github"></input><br></br><br></br>
+                        <input className={styles.input} id="github"></input><br></br><br></br>
                         <h2>Link to Project Demo (optional)</h2>
-                        <input id="demo"></input><br></br><br></br>
+                        <input className={styles.input} id="demo"></input><br></br><br></br>
                         <h2>Languages, technologies, libraries used (optional)</h2>
-                        <input id="builtWith"></input><br></br><br></br>
+                        <input className={styles.input} id="builtWith"></input><br></br><br></br>
                         <h2>Do you want your project to be displayed in our project gallery?</h2>
-                        <input id="publicCheck" type="checkbox" defaultChecked />
+                        <input className={styles.checkbox} id="publicCheck" type="checkbox" defaultChecked />
                         <label >  Yes</label>
                         <br></br><br></br>
                         <button className='btn-primary' type="submit" onClick={attemptSubmission}>Submit</button>

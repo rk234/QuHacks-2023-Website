@@ -7,7 +7,31 @@
 .section {
     padding: 2rem;
     padding-left: 0;
+    
 }
+
+.input {
+    width: 500px;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    accent-color: #00c200;
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
 
 .list {
     list-style-type: none;
@@ -45,10 +69,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 39, 0, 0.67) 20%, rgba(0, 39, 0, 0.501) 100%), url("/timeline/pic2019-1.jpg");
+    background: #005800;
     background-size: cover;
     padding: 2rem;
-    height: 30rem;
+    height: 15rem;
 }
 
 .head {
@@ -95,6 +119,16 @@
     .headtext>p {
         font-size: 1.25rem;
     }
+
+    .sectionContainer {
+        margin-left: 30px;
+    }
+    
+
+    .input {
+        width: 300px;
+    }
+
 
     .imgContainer>img {
         max-width: 100%;
