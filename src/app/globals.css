@@ -78,7 +78,7 @@ select {
   font-family: monospace;
   font-size: 1rem;
 }
-a {
+.link, a {
   text-decoration: none;
   color: var(--text-accent);
   transition: 0.1s;
@@ -86,9 +86,10 @@ a {
   font-family: monospace;
 }
 
-a:hover {
- background-color: var(--text-accent);
- color: white;
+.link:hover, a:hover {
+  cursor: pointer;
+  background-color: var(--text-accent);
+  color: white;
 }
 
 .page {
