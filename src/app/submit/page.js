@@ -10,10 +10,7 @@ export default function SubmissionFormPage() {
     const [members, setMembers] = useState([]);
     const [isHovered, setIsHovered] = useState(false);
     const[memberId, setId] = useState(0);
-
-    //TODO: Submission form should be disabled/enabled based on config flag on firebase
-    //in order to prevent submissions out-of-competition and after the deadline.
-    //Once ready call areSubmissionsOpen() from projectService.js to show/hide the form
+    const [level, setLevel] = useState("advanced")
 
     async function attemptSubmission() {
 
@@ -48,7 +45,7 @@ export default function SubmissionFormPage() {
         let builtWith = document.getElementById("builtWith").value;
         let publicProject = document.getElementById("publicCheck").checked;
 
-        let tracks = [];
+        let tracks = [level];
         if (document.getElementById("mathCheck").checked) {
             tracks.push("Math");
         }
@@ -114,19 +111,21 @@ export default function SubmissionFormPage() {
                         <h2>Project Name</h2>
                         <input className={styles.input} id="projectName"></input><br></br><br></br>
                         <h2>Team Members (enter names one at a time)</h2>
-                        <input
-                            value={memberName}
-                            onChange={e => setName(e.target.value)}
-                        />
-                        <br></br><br></br>
-                        <button className='btn-primary' type="addMember" onClick={() => {
-                            setMembers([
-                                ...members,
-                                { id: memberId, name: memberName }
-                            ]);
-                            setId(memberId+1)
-                        }}>Add Member</button>
-                        <br></br><br></br>
+                        <div className={styles.memberfield}>
+                            <input
+                                value={memberName}
+                                onChange={e => setName(e.target.value)}
+                            />
+                            <button disabled={members.length >= 4} className='btn-primary' type="addMember" onClick={() => {
+                                setMembers([
+                                    ...members,
+                                    { id: memberId, name: memberName }
+                                ]);
+                                setId(memberId+1)
+                            }}>Add Member</button>
+                        </div>
+                        
+                        {members.length > 0 ? <h2>Team members: </h2> : ""}
                         <ul className={styles.list}>
                             {members.map(member => (
                                 <li key={member.id} className={styles.memberName} onClick={() => {
@@ -151,6 +150,11 @@ export default function SubmissionFormPage() {
                         <label >  AI</label><br></br>
                         <input className={styles.checkbox} id="gameCheck" type="checkbox" />
                         <label >  Game</label>
+                        <br></br><br></br>
+                        <select value={level} onChange={(e) => setLevel(e.target.value)}>
+                            <option value={"advanced"}>Advanced</option>
+                            <option value={"beginner"}>Beginner</option>
+                        </select>
                         <br></br><br></br>
                         <h2>Link to Project GitHub (optional) </h2>
                         <input className={styles.input} id="github"></input><br></br><br></br>

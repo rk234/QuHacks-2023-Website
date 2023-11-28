@@ -97,6 +97,7 @@ export default function GalleryPage() {
         return allProjects
             .filter(proj => (proj.name+proj.description+proj.team_members.join(" ")).toLowerCase().includes(query.toLowerCase()))
             .filter(proj => track == "all" || proj.tracks.filter(t => t.toLowerCase() == track.toLowerCase()).length >= 1)
+            .filter(proj => proj.public)
             .sort((a, b) => {
                 if(a.prize && b.prize) {
                     return a.prize.rank-b.prize.rank
