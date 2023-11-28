@@ -177,6 +177,8 @@
     .moreBtn {
         display: block;
         padding: 0;
+        font-size: 1rem;
+        font-family: monospace;
     }
 
     .name {
