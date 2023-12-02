@@ -19,7 +19,7 @@ import Compressor from 'compressorjs';
     }
 }
 */
-async function submitProject(project) {
+function submitProject(project, success) {
     let file = project.screenshot;
     delete project.screenshot;
 
@@ -35,7 +35,8 @@ async function submitProject(project) {
                 getDownloadURL(screenshotRef).then(url => {
                     project.screenshot_url = url;
                     setDoc(projectDoc, project);
-                    alert("Project submitted.")
+                    success();
+                    
                 });
             });
         }

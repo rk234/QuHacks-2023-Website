@@ -11,6 +11,7 @@ export default function SubmissionFormPage() {
     const [isHovered, setIsHovered] = useState(false);
     const[memberId, setId] = useState(0);
     const [level, setLevel] = useState("advanced")
+    const [pending, setPending] = useState(false)
 
     async function attemptSubmission() {
 
@@ -20,7 +21,11 @@ export default function SubmissionFormPage() {
 
             let validation = validateSubmission();
             if (validation[0]) {
-                submitProject(validation[1]);
+                setPending(true)
+                submitProject(validation[1], () => {
+                    setPending(false)
+                    alert("You're project has been successfully submitted !")
+                });
             } else {
                 alert(validation[1]);
             }
@@ -93,6 +98,14 @@ export default function SubmissionFormPage() {
 
     return (
         <main>
+            {pending ? 
+            <div className={styles.pendingContainer}>
+                <h1>
+                    Submitting...
+                </h1>
+                <p>Please wait</p>
+            </div> : ""
+            }
             <div className={styles.content}>
                 <div className={styles.headContainer}>
                     <div className={styles.head}>
