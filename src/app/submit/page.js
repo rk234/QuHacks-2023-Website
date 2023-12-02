@@ -29,11 +29,7 @@ export default function SubmissionFormPage() {
             alert("=== Submissions Closed === \n\n" + submissionsOpen.msg);
         }
     }
-
-    function addTeamMembers() {
-
-
-    }
+    
     // returns [false, "reason for failure"] if submission is invalid
     // returns [true, projectObject] if submission is valid
     function validateSubmission() {
@@ -87,7 +83,7 @@ export default function SubmissionFormPage() {
             project.github = github;
         }
         if (builtWith.trim()) {
-            project.build_with = builtWith;
+            project.built_with = builtWith;
         }
         if (demo.trim()) {
             project.demo = demo;
