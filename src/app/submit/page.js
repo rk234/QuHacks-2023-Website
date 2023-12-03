@@ -1,9 +1,7 @@
 "use client"
 import { useState } from 'react'
-import { db } from "../firebase/config";
 import styles from "./page.module.css"
 import { submitProject, areSubmissionsOpen } from "../services/projectService.js"
-
 
 export default function SubmissionFormPage() {
     const [memberName, setName] = useState('');
@@ -125,7 +123,7 @@ export default function SubmissionFormPage() {
                                 value={memberName}
                                 onChange={e => setName(e.target.value)}
                             />
-                            <button disabled={members.length >= 4} className='btn-primary' type="addMember" onClick={() => {
+                            <button disabled={members.length >= 4 || memberName.trim().length == 0} className='btn-primary' type="addMember" onClick={() => {
                                 setMembers([
                                     ...members,
                                     { id: memberId, name: memberName }
