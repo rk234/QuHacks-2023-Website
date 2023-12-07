@@ -103,7 +103,8 @@
     background-color: var(--background-darker);
     border: 1px solid var(--text-accent);
     width: 50rem;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .modalHeader {
