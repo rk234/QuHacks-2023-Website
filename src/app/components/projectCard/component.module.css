@@ -60,6 +60,11 @@
     flex: 1;
     margin: 0;
     font-size: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .head {
@@ -71,6 +76,8 @@
 
 .head > p {
     margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .descContainer > p {

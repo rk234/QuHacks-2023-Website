@@ -7,7 +7,7 @@ export default function SubmissionFormPage() {
     const [memberName, setName] = useState('');
     const [members, setMembers] = useState([]);
     const [isHovered, setIsHovered] = useState(false);
-    const[memberId, setId] = useState(0);
+    const [memberId, setId] = useState(0);
     const [level, setLevel] = useState("advanced")
     const [pending, setPending] = useState(false)
 
