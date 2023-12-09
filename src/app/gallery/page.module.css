@@ -102,7 +102,7 @@
 .modal {
     background-color: var(--background-darker);
     border: 1px solid var(--text-accent);
-    width: 50rem;
+    max-width: 50rem;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -178,6 +178,11 @@
     }
 
     .project {
+        max-width: none;
+        width: 100%;
+    }
+
+    .modal {
         max-width: none;
         width: 100%;
     }
