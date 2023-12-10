@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import styles from "./page.module.css"
 import { submitProject, areSubmissionsOpen } from "../services/projectService.js"
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function SubmissionFormPage() {
     const [memberName, setName] = useState('');
@@ -10,6 +12,13 @@ export default function SubmissionFormPage() {
     const [memberId, setId] = useState(0);
     const [level, setLevel] = useState("advanced")
     const [pending, setPending] = useState(false)
+
+    const toastProps = (success) => ({
+        hideProgressBar: true,
+        closeButton: true,
+        className: success ? styles.toastSuccess : styles.toastError,
+        closeButton: () => <span>[x]</span>
+    })
 
     async function attemptSubmission() {
 
@@ -22,14 +31,16 @@ export default function SubmissionFormPage() {
                 setPending(true)
                 submitProject(validation[1], () => {
                     setPending(false)
-                    alert("You're project has been successfully submitted !")
+                    toast("Your project has been successfully submitted!", {
+                        ...toastProps(true)
+                    })
                 });
             } else {
-                alert(validation[1]);
+                toast(validation[1], {...toastProps(false)});
             }
 
         } else {
-            alert("=== Submissions Closed === \n\n" + submissionsOpen.msg);
+            toast("Submissions are closed!", {...toastProps(false)});
         }
     }
     
@@ -104,6 +115,7 @@ export default function SubmissionFormPage() {
                 <p>Please wait</p>
             </div> : ""
             }
+            <ToastContainer/>
             <div className={styles.content}>
                 <div className={styles.headContainer}>
                     <div className={styles.head}>

@@ -4,6 +4,21 @@
     height: 100%;
 }
 
+.toastSuccess {
+    background-color: var(--background-accent);
+    color: white;
+    font-family: monospace;
+    border: 1px solid var(--text-accent)
+}
+
+.toastError {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border: 1px solid red;
+    background-color: rgb(87, 11, 11);
+}
+
 .section {
     padding: 2rem;
     padding-left: 0;
