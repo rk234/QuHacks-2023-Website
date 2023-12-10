@@ -107,15 +107,6 @@
     to {display: flex; opacity: 1;}
 }
 
-.mobnavlink {
-    padding: 0;
-    font-size: 1rem;
-}
-
-.mobnavlink:hover {
-    text-decoration: underline;
-    background: none;
-}
 
 .name {
     font-weight: bold;
@@ -164,8 +155,15 @@
 }
 
 .mobnavlink {
-    font-size: 1rem;
+    padding: 0 !important;
+    font-size: 1rem !important;
 }
+
+.mobnavlink:hover {
+    text-decoration: underline !important;
+    background: none !important;
+}
+
 
 .navlink {
     font-size: 1.1rem;
@@ -179,6 +177,8 @@
     .moreBtn {
         display: block;
         padding: 0;
+        font-size: 1rem;
+        font-family: monospace;
     }
 
     .name {

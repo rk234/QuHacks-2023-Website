@@ -45,10 +45,16 @@ export default function ScheduleSection() {
                         <td className={styles.td}>Hacking Begins!</td>
                     </tr>
                     <tr>
+                        <td className={styles.td}>11:00 AM - 12:00 PM</td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}></td>
+                        <td className={styles.td}>Intro to Python</td>
+                    </tr>
+                    <tr>
                         <td className={styles.td}>12:00 PM - 1:00 PM</td>
                         <td className={styles.td}></td>
                         <td className={styles.td}>Getting Started with Web Dev</td>
-                        <td className={styles.td}>Intro to Python</td>
+                        <td className={styles.td}></td>
                     </tr>
                     <tr>
                         <td className={styles.td}>1:00 PM - 2:00 PM</td>
