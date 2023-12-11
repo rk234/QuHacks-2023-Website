@@ -20,11 +20,11 @@ export default function Sponsors() {
                     <a rel="noreferrer noopener" target='_blank' href="https://oneilinteractive.com/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/oneil-interactive.png" />
                     </a>
-                    <a rel="noreferrer noopener" target='_blank' href="https://www.quadeducationgroup.com/">
-                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="https://uploads-ssl.webflow.com/61afd21262830d1b23b88ef7/61b924e5f77f0541aa6755a6_Quad%20Education%20-%20Color%202x.svg" />
-                    </a>
                     <a rel="noreferrer noopener" target='_blank' href="https://mlh.io/">
                         <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="sponsors/mlh.png" />
+                    </a>
+                    <a rel="noreferrer noopener" target='_blank' href="https://www.quadeducationgroup.com/">
+                        <img style={{backgroundColor: "white", border: "10px solid white", borderRadius: "8px"}} src="https://uploads-ssl.webflow.com/61afd21262830d1b23b88ef7/61b924e5f77f0541aa6755a6_Quad%20Education%20-%20Color%202x.svg" />
                     </a>
                 </div>
             </div>
