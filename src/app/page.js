@@ -55,7 +55,7 @@ export default function Home() {
         <p>📢  Want to help make QuHacks possible? Donate <a href="https://hcb.hackclub.com/donations/start/quhacks-2024" rel="noreferrer noopener" target="_blank">HERE</a>!</p>
       </div>
       <div className={styles.homecontainer}>
-        <img alt='QuHacks Logo' src="/logo.png" width={100} height={100} sizes='(max-width: 750px) 15rem, 20rem' className={styles.logo} />
+        <img alt='QuHacks Logo' src="logo.png" width={100} height={100} sizes='(max-width: 750px) 15rem, 20rem' className={styles.logo} />
         <div>
           <span className={styles.title}>QuHacks 2024</span>
           <p>December 16th @ Johns Hopkins APL (Building 201)</p>
