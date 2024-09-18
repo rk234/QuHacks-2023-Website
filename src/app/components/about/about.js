@@ -14,7 +14,7 @@ export default function AboutSection() {
             </div>
 
             <div className={styles.aboutImg}>
-                <img src="/about.jpeg"></img>
+                <img src="about.jpeg"></img>
             </div>
         </div>
     )
